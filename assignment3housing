@@ -31,3 +31,17 @@ Amsterdam will earn €1.444.260 out of the tourism tax.
  
 
 Please note that this is data for the year 2023. It is likely that the tourist tax will be higher in 2025 given the current inflation. Next to this, another critical point is that probably not all of the visitors will stay in Amsterdam, but also in neighboring cities. 
+
+# Question 2: • Plot the amount of AirBnB locations per neighbourhood.  
+
+import pandas as pd 
+import matplotlib.pyplot as plt  
+
+with open ("C:/Users/maaik/Documents/UNI/MSc MADE/Metropolitan Data/Assignments/Housing data/listings.csv", 'r') as ams_csv: 
+    ams_df = pd.read_csv(ams_csv)      
+
+plt.ylabel('number of AirBnBs') 
+plt.xlabel('neighbourhood') 
+plt.title('number of AirBnBs per neighbourhood in Amsterdam') 
+
+ams_df['neighbourhood'].value_counts().plot (kind='bar',color='r') 
