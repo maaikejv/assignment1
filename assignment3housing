@@ -1,0 +1,33 @@
+# According to the municipality of Amsterdam https://www.amsterdam.nl/veelgevraagd/toeristenbelasting-2c7c2# . The tourist tax in Amsterdam is a combination of a percentage of the price of the overnight stay plus a fixed price per night. 
+
+# Out of the data of the AirBnBs in Amsterdam, the average price of a one night stay is calculated. This is €240,71. This does not include the hotels in the Amsterdam. For AirBnB the tax percentage is 10% (overig). For this category there is no fixed price added. 
+
+rows = bnb_wp['price'].size
+total_price = bnb_wp['price'].sum()
+average = total_price / rows
+
+mean = bnb_wp['price'].mean()
+median = bnb_wp['price'].median()
+print(mean, median)  
+
+# Per person per night 
+= 240,7*0,1 
+= 24,07 
+
+
+# For all 30.000 visitors 
+= 24,07*30000 
+= 722130 
+
+ 
+# Assuming they will stay at least two nights to witness the event. (Assuming the event will be one day) 
+=722130*2 
+= 1444260 
+
+
+
+Amsterdam will earn €1.444.260 out of the tourism tax. 
+
+ 
+
+Please note that this is data for the year 2023. It is likely that the tourist tax will be higher in 2025 given the current inflation. Next to this, another critical point is that probably not all of the visitors will stay in Amsterdam, but also in neighboring cities. 
